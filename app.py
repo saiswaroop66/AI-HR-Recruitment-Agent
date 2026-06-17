@@ -21,7 +21,9 @@ st.write("Upload a Resume and get AI-powered analysis")
 # GROQ API
 # ==========================================
 
-GROQ_API_KEY = "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"
+import os
+
+GROQ_API_KEY = os.getenv("GROQ_API_KEY")
 
 client = Groq(api_key=GROQ_API_KEY)
 
